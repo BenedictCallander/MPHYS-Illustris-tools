@@ -31,7 +31,7 @@ from scipy.signal import medfilt, savgol_filter
 
 
 #set basic constants during initialisation for easy 
-headers = {"api-key":"849c96a5d296f005653a9ff80f8e259e"}
+headers = {"api-key":"API KEY"}
 start =time.time()
 pd.options.mode.chained_assignment = None  # default='warn'
 
@@ -125,8 +125,7 @@ class subhalo:
         self.simID = simID #simulation used (TNG100/TNG50)
         self.snapID = snapID #snapshot of study - can be either number of z= (z= required in parenthesis )
         self.subID = subID #subhalo ID - could be iterated 
-        #basePath='/x/Physics/AstroPhysics/Shared-New/DATA/IllustrisTNG/TNG100-1/output' #path to simulation data on Noether
-        basePath = '/home/AstroPhysics-Shared/DATA/IllustrisTNG/TNG50-1/output/'
+        basePath = 'YOUR BASEPATH HERE'
         baseurl = 'http://www.tng-project.org/api/'+str(simID)+'/snapshots/'+str(snapID) # API url for simulation/snapshot information
         
         hubble =0.7
