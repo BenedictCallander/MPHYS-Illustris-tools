@@ -10,7 +10,7 @@ from scipy.optimize import curve_fit ; from scipy.signal import medfilt, savgol_
 #Important constants
 #
 
-headers = {"api-key":"849c96a5d296f005653a9ff80f8e259e"}
+headers = {"api-key":"API KEY"}
 
 #
 #Main Code
